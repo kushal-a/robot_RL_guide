@@ -1,0 +1,35 @@
+name: Build & Deploy Docs
+
+on:
+  push:
+    branches:
+      - main  # or master, depending on your default branch
+  workflow_dispatch:  # also allow manual trigger
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Build Sphinx Docs
+        run: |
+          sphinx-build -b html docs/source docs/build/html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/build/html
+          publish_branch: gh-pages
