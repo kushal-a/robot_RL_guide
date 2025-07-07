@@ -3,9 +3,12 @@ table.docutils td {
   word-wrap: break-word;
 }
 
-/* custom.css */
 .wy-menu-vertical .toctree-expand {
-    display: inline !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+    display: inline-block;
+    width: 1em;
+    margin-right: 4px;
+    font-weight: bold;
+    color: #444;
+    cursor: pointer;
 }
+
