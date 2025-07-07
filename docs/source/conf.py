@@ -33,3 +33,9 @@ html_static_path = ['_static']
 
 def setup(app):
     app.add_css_file('custom.css')
+
+html_theme_options = {
+    'navigation_depth': 4,  # or however deep your TOC goes
+}
+
+numfig = True  # If you want numbered figures/tables as well
