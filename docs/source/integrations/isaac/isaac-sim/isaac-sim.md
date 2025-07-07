@@ -1,5 +1,16 @@
 # Isaac Sim
 
+```{toctree}
+:maxdepth: 2
+:caption: Readings Ahead
+:hidden:
+
+docker/docker
+filesystem
+basics
+standalone_python/standalone_python
+```
+
 ## Important links
 
 [Documentation](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/index.html) | [Website](https://developer.nvidia.com/isaac/sim)
@@ -10,11 +21,15 @@ Native installation of Isaac Sim is stable. Isaac Sim requires CUDA to run the s
 
 Irrespective of the installation method, you will receive an `isaac-sim` folder which contains key plugins and scripts to interact with Isaac Sim. The contents and uses of this folder is discussed in [Filesystem](./filesystem.md).
 
+---
+
 ```{toctree}
 :maxdepth: 2
+:caption: Readings Ahead
 
 docker/docker
 filesystem
 basics
 standalone_python/standalone_python
 ```
+
