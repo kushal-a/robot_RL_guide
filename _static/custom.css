@@ -2,13 +2,3 @@ table.docutils td {
   white-space: normal !important;
   word-wrap: break-word;
 }
-
-.wy-menu-vertical .toctree-expand {
-    display: inline-block;
-    width: 1em;
-    margin-right: 4px;
-    font-weight: bold;
-    color: #444;
-    cursor: pointer;
-}
-
