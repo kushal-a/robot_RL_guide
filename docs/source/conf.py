@@ -38,6 +38,7 @@ def setup(app):
 
 html_theme_options = {
     'navigation_depth': 4,  # or however deep your TOC goes
+    'titles_only': False
 }
 
 numfig = True  # If you want numbered figures/tables as well
