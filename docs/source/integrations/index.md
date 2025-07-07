@@ -1,3 +1,12 @@
+```{toctree}
+:maxdepth: 4
+:caption: Contents
+:numbered:
+
+isaac/index
+python/index
+```
+
 
 # Integrations
 
@@ -11,9 +20,3 @@ Clearly there are 2 workflows:
 
 We will discuss each of there in detail.
 
-```{toctree}
-:maxdepth: 2
-
-isaac/index
-python/index
-```

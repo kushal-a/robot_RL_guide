@@ -4,8 +4,9 @@ Welcome to the documentation on Exploring Robot Reinforcement Learning Tools and
 =======================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Contents:
+   :numbered:
 
    intro
    glossary
