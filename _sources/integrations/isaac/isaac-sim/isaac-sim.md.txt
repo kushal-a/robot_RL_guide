@@ -1,16 +1,5 @@
 # Isaac Sim
 
-```{toctree}
-:maxdepth: 2
-:caption: Readings Ahead
-:hidden:
-
-docker/docker
-filesystem
-basics
-standalone_python/standalone_python
-```
-
 ## Important links
 
 [Documentation](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/index.html) | [Website](https://developer.nvidia.com/isaac/sim)
