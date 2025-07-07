@@ -36,6 +36,13 @@ To save the container in its existing state,
 ```bash
 sudo docker commit -m <message> isaac-sim nvcr.io/nvidia/isaac-sim:4.5.0-cached
 ```
-Replace `cached` with any other tag you like.
+Replace `-cached` with any other tag you like.
 
 The drawback of of docker container installation is unavailability of direct GUI support. However, Isaac Sim has built in feature where the GUI is published/streamed. Docker installation of Isaac Sim has been designed for running on servers. Hence, one can connect remotely via NVIDIA's Omniverse Streaming Client to view the GUI. Here we will be running the server (docker container) and the streaming client on the same PC. The installation of the streaming client is included in the container installation steps of Isaac Sim.
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+
+check_docker_installation
+```

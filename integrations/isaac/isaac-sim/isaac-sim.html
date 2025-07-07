@@ -23,7 +23,7 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Installation and Management of Isaac Sim Container in Docker" href="docker.html" />
+    <link rel="next" title="Installation and Management of Isaac Sim Container in Docker" href="docker/docker.html" />
     <link rel="prev" title="Isaac tools (and ROS)" href="../index.html" /> 
 </head>
 
@@ -97,12 +97,26 @@
 <h1>Isaac Sim<a class="headerlink" href="#isaac-sim" title="Link to this heading"></a></h1>
 <section id="important-links">
 <h2>Important links<a class="headerlink" href="#important-links" title="Link to this heading"></a></h2>
-<p><a class="reference external" href="https://isaac-sim.github.io/IsaacLab/main/index.html">Documentation</a> | <a class="reference external" href="https://developer.nvidia.com/isaac/sim">Website</a></p>
+<p><a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/index.html">Documentation</a> | <a class="reference external" href="https://developer.nvidia.com/isaac/sim">Website</a></p>
 </section>
 <section id="choosing-installation-method-clash-of-the-titans">
 <h2>Choosing installation method, clash of the titans<a class="headerlink" href="#choosing-installation-method-clash-of-the-titans" title="Link to this heading"></a></h2>
 <p>Native installation of Isaac Sim is stable. Isaac Sim requires CUDA to run the simulation on GPU. Tensorflow, which is a part of the other workflow, also requires CUDA to run its training on NVIDIA’s GPUs. Since we want to able to develop in both workflows on the same PCs, compatibility of drivers, CUDA, python and other dependencies is crucial. In addition to this, ROS has its own requirements and installation of python and its libraries. To prevent incompatibility among so many libraries and applications, we will be developing both these workflows and ROS in seperate docker containers. Hence, a containerized installation for Isaac Sim, and subsequently other applications/packages is chosen.</p>
+<p>Irrespective of the installation method, you will receive an <code class="docutils literal notranslate"><span class="pre">isaac-sim</span></code> folder which contains key plugins and scripts to interact with Isaac Sim. The contents and uses of this folder is discussed in <a class="reference internal" href="filesystem.html"><span class="std std-doc">Filesystem</span></a>.</p>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="docker/docker.html">Installation and Management of Isaac Sim Container in Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="filesystem.html">Filesystem</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="filesystem.html#sh">.sh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filesystem.html#python-packages-and-libraries">Python packages and libraries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="basics.html">Core Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="standalone_python/standalone_python.html">Standalone Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="standalone_python/standalone_examples.html">Using Python Standalone Examples</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </section>
 </section>
@@ -112,7 +126,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../index.html" class="btn btn-neutral float-left" title="Isaac tools (and ROS)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="docker.html" class="btn btn-neutral float-right" title="Installation and Management of Isaac Sim Container in Docker" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="docker/docker.html" class="btn btn-neutral float-right" title="Installation and Management of Isaac Sim Container in Docker" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
