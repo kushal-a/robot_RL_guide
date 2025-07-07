@@ -3,7 +3,7 @@ name: Build & Deploy Docs
 on:
   push:
     branches:
-      - main  # or master, depending on your default branch
+      - master  # or master, depending on your default branch
   workflow_dispatch:  # also allow manual trigger
 
 jobs:
