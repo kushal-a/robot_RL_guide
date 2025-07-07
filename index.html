@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction &mdash; Exploring Robot Reinforcement Learning Tools and Compatibilities 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Exploring Robot Reinforcement Learning Tools and Compatibilities
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Introduction</a></li>
+<li><a class="reference internal" href="#context">Context</a></li>
+<li><a class="reference internal" href="#glossary">Glossary</a></li>
+<li><a class="reference internal" href="#news-and-updates">News and Updates</a></li>
+<li><a class="reference internal" href="#integrations">Integrations</a><ul>
+<li><a class="reference internal" href="#isaac-tools-and-ros">Isaac tools (and ROS)</a><ul>
+<li><a class="reference internal" href="#isaac-sim">Isaac Sim</a><ul>
+<li><a class="reference internal" href="#choosing-installation-method-clash-of-the-titans">Choosing installation method, clash of the titans</a></li>
+<li><a class="reference internal" href="#inside-the-docker-container">Inside the docker container</a></li>
+<li><a class="reference internal" href="#standalone-python-for-docker-installation-enabling-streaming">Standalone Python for docker installation (enabling streaming)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#isaac-ros">Isaac ROS</a></li>
+<li><a class="reference internal" href="#isaac-lab">Isaac Lab</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pybullet-with-tf-gym">PyBullet with TF &amp; Gym</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Exploring Robot Reinforcement Learning Tools and Compatibilities</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Introduction</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
+<p>The package explore various tools available for Reinforcement learning for robotics applications</p>
+</section>
+<section id="context">
+<h1>Context<a class="headerlink" href="#context" title="Link to this heading"></a></h1>
+<p><strong><a class="reference external" href="https://nvidia.com">NVIDIA</a></strong> is the creator of GPU, specialized physical devices meant for gaming. Turns out it is good at bunch of other stuff. One among several new applications is Industrial AI of which Robotics is a part (according to NVIDIA). Over years, NVIDIA has developed specialized tools and created platforms for these applications. <strong><a class="reference external" href="https://openai.com">OpenAI</a></strong>, <strong><a class="reference external" href="https://ai.google.com">Google</a></strong> are other big players.</p>
+</section>
+<section id="glossary">
+<h1>Glossary<a class="headerlink" href="#glossary" title="Link to this heading"></a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong><a class="reference external" href="https://www.nvidia.com/en-in/omniverse/">Omniverse</a></strong></p></td>
+<td><p>NVIDIA’s Industrial AI platform. Sort of like playstore for its applications. There is also an Omniverse SDK for you to make your own Omniverse applications. Some of these include digital twin, robot learning, synthetic data generation etc. This space is largely occupied by robotics and related fields.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong><a class="reference external" href="https://developer.nvidia.com/isaac/">Isaac</a></strong></p></td>
+<td><p>Earlier being the name of a robotics application, this is being developed as a full fledged platform for robotics.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong><a class="reference external" href="https://developer.nvidia.com/isaac/sim">Isaac Sim</a></strong></p></td>
+<td><p>A simulator like Gazebo. The speciality of Isaac Sim is that it provides highly photorealistic simulations, good for camera oriented development.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong><a class="reference external" href="https://developer.nvidia.com/isaac/ros">Isaac Ros</a></strong></p></td>
+<td><p>A package to connect Isaac sim to Ros</p></td>
+</tr>
+<tr class="row-even"><td><p><strong><a class="reference external" href="https://developer.nvidia.com/isaac/lab">Isaac Lab</a></strong></p></td>
+<td><p>A package to use Isaac sim for robot learning. Here you can leverage other omniverse tools in integration.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong><a class="reference external" href="https://www.gymlibrary.dev/">OpenAI Gym</a></strong></p></td>
+<td><p>OpenAI python library for RL. Due to its focus on RL development, the framework allowed excellent environment descriptions, as required by RL, and this feature is heavily used across platform, including AnyMal. However, It does not have a physics engine. This  package has been deprecated. Earlier Gym environments were used to run simulations in Isaac Sim.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong><a class="reference external" href="https://gymnasium.farama.org/index.html">Gymnasium</a></strong></p></td>
+<td><p>Newly maintained version of OpenAI Gym by a non-profit</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong><a class="reference external" href="https://pybullet.org">Pybullet</a></strong></p></td>
+<td><p>Python library for physics simulation. Now you can combine Gym and Pybullet to make excellent environments with good physics simulations and use Gym or any other application to run your RL policy.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong><a class="reference external" href="https://tensorflow.org">Tensorflow</a></strong></p></td>
+<td><p>Open source python library maintained by Google which leads in RL applications. However, it hosts a platter of ML tools.</p></td>
+</tr>
+<tr class="row-odd"><td><p>CUDA</p></td>
+<td><p>NVIDIA’s software library/package to allow usage of GPU for tasks other than gaming. It optimizes how running scripts are implements to accelrate performance.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="news-and-updates">
+<h1>News and Updates<a class="headerlink" href="#news-and-updates" title="Link to this heading"></a></h1>
+<ol class="arabic simple">
+<li><p>Isaac Sim had been close sourced for a long time. In June 2025, NVIDIA made Isaac Sim 5.0 open source.</p></li>
+<li><p>Pybullet has not been well maintained in since 2023 (to 2025). It has since got one update in 2025. Although Pybullet does not have other dependencies, examples problems, tutorials and documentation still refers old and deprecated libraries. Pybullet RL examples still use the old Gym library. Hence, using pybullet for RL is problematic as of now (2025)</p></li>
+<li><p>Although Isaac Sim 5.0 is open-source, it is still very new with several bugs. Isaac Lab 2.2 is compatible with Isaac Sim 4.5 and is the recommended compatibility.</p></li>
+<li><p>There are updates coming in all these libraries very actively.</p></li>
+</ol>
+</section>
+<section id="integrations">
+<h1>Integrations<a class="headerlink" href="#integrations" title="Link to this heading"></a></h1>
+<p>Docker images have been made for software that was developed in close proximity with each other.</p>
+<p><img alt="framework" src="_images/framework.png" /></p>
+<p>Clearly there are 2 workflows:</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#isaac-tools-and-ros"><span class="xref myst">Isaac tools (and ROS)</span></a></p></li>
+<li><p><a class="reference internal" href="#pybullet-with-tf--gym"><span class="xref myst">Pybullet with TF &amp; Gym</span></a></p></li>
+</ol>
+<p>We will discuss each of there in detail.</p>
+<section id="isaac-tools-and-ros">
+<h2>Isaac tools (and ROS)<a class="headerlink" href="#isaac-tools-and-ros" title="Link to this heading"></a></h2>
+<p>This section will not cover core ROS but its only integrations with Isaac tools. The following will be discussed here.</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#isaac-sim"><span class="xref myst">Isaac Sim</span></a>, for simulation</p></li>
+<li><p><a class="reference internal" href="#isaac-ros"><span class="xref myst">Isaac ROS</span></a>, for integration</p></li>
+<li><p><a class="reference internal" href="#isaac-lab"><span class="xref myst">Isaac Lab</span></a>, for learning</p></li>
+</ol>
+<p>There are 2 compatibilites to check:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Interaction</p></th>
+<th class="head"><p>Compatibility</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Isaac Sim &lt;-&gt; Isaac Lab</p></td>
+<td><p>As <a class="reference external" href="https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html#local-installation">recommended</a> by NVIDIA, Isaac Sim 4.5 and Isaac Lab 2.2 is currently supported as tested</p></td>
+</tr>
+<tr class="row-odd"><td><p>ROS &lt;-&gt; Isaac Sim</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<section id="isaac-sim">
+<h3>Isaac Sim<a class="headerlink" href="#isaac-sim" title="Link to this heading"></a></h3>
+<p><a class="reference external" href="https://isaac-sim.github.io/IsaacLab/main/index.html">Documentation</a> | <a class="reference external" href="https://developer.nvidia.com/isaac/sim">Website</a></p>
+<section id="choosing-installation-method-clash-of-the-titans">
+<h4>Choosing installation method, clash of the titans<a class="headerlink" href="#choosing-installation-method-clash-of-the-titans" title="Link to this heading"></a></h4>
+<p>Native installation of Isaac Sim is stable. Isaac Sim requires CUDA to run the simulation on GPU. Tensorflow, which is a part of the other workflow, also requires CUDA to run its training on NVIDIA’s GPUs. Since we want to able to develop in both workflows on the same PCs, compatibility of drivers, CUDA, python and other dependencies is crucial. In addition to this, ROS has its own requirements and installation of python and its libraries. To prevent incompatibility among so many libraries and applications, we will be developing both these workflows and ROS in seperate docker containers. Hence, a containerized installation for Isaac Sim, and subsequently other applications/packages is chosen.</p>
+<p>Isaac Sim has been installed as a <a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/installation/install_container.html">docker image</a>.</p>
+<p>The image I used is:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Repository: nvcr.io/nvidia/isaac-sim
+Tag: 4.5.0
+</pre></div>
+</div>
+<p>To run a container, use the following command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="w"> </span>isaac-sim<span class="w"> </span>--entrypoint<span class="w"> </span>bash<span class="w"> </span>-it<span class="w"> </span>--runtime<span class="o">=</span>NVIDIA<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;ACCEPT_EULA=Y&quot;</span><span class="w"> </span>--rm<span class="w"> </span>--network<span class="o">=</span>host<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-e<span class="w"> </span><span class="s2">&quot;PRIVACY_CONSENT=Y&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-v<span class="w"> </span>~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-v<span class="w"> </span>~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-v<span class="w"> </span>~/docker/isaac-sim/cache/pip:/root/.cache/pip:rw<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-v<span class="w"> </span>~/docker/isaac-sim/cache/glcache:/root/.cache/NVIDIA/GLCache:rw<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-v<span class="w"> </span>~/docker/isaac-sim/cache/computecache:/root/.nv/ComputeCache:rw<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-v<span class="w"> </span>~/docker/isaac-sim/logs:/root/.NVIDIA-omniverse/logs:rw<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-v<span class="w"> </span>~/docker/isaac-sim/data:/root/.local/share/ov/data:rw<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-v<span class="w"> </span>~/docker/isaac-sim/documents:/root/Documents:rw<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>nvcr.io/NVIDIA/isaac-sim:4.5.0
+</pre></div>
+</div>
+<p>To open a new terminal in existing running container of Isaac Sim, use the following command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-ti<span class="w"> </span>&lt;container-name&gt;<span class="w"> </span>bash
+</pre></div>
+</div>
+<p>To save the container in its existing state,</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>docker<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span>&lt;message&gt;<span class="w"> </span>&lt;container-name&gt;<span class="w"> </span>nvcr.io/nvidia/isaac-sim:&lt;new/old-tag&gt;
+</pre></div>
+</div>
+<p>The drawback of of docker container installation is unavailability of direct GUI support. However, Isaac Sim has built in feature where the GUI is published/streamed. Docker installation of Isaac Sim has been designed for running on servers. Hence, one can connect remotely via NVIDIA’s Omniverse Streaming Client to view the GUI. Here we will be running the server (docker container) and the streaming client on the same PC. The installation of the streaming client is included in the container installation steps of Isaac Sim.</p>
+</section>
+<section id="inside-the-docker-container">
+<h4>Inside the docker container<a class="headerlink" href="#inside-the-docker-container" title="Link to this heading"></a></h4>
+<p>Once in the bash of the docker container, we can start interacting with Isaac Sim.</p>
+<p>To start Isaac Sim, run,</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./runheadless.sh<span class="w"> </span>-v
+</pre></div>
+</div>
+<p>Remember to use the streaming client to view the GUI.</p>
+<p>Important concepts are covered <a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/introduction/quickstart_index.html">here</a>.</p>
+<p>Isaac Sim has 3 <a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/introduction/workflows.html">workflows</a>. The first two workflows function the same as in native installation and docker installation. For the last workflow, we will have to make modifications.</p>
+<p>The current set of of getting_started scripts and tutorials are designed for native installation. To run in streaming mode, the following modifications will ahve to be made.</p>
+</section>
+<section id="standalone-python-for-docker-installation-enabling-streaming">
+<h4>Standalone Python for docker installation (enabling streaming)<a class="headerlink" href="#standalone-python-for-docker-installation-enabling-streaming" title="Link to this heading"></a></h4>
+</section>
+</section>
+<section id="isaac-ros">
+<h3>Isaac ROS<a class="headerlink" href="#isaac-ros" title="Link to this heading"></a></h3>
+</section>
+<section id="isaac-lab">
+<h3>Isaac Lab<a class="headerlink" href="#isaac-lab" title="Link to this heading"></a></h3>
+</section>
+</section>
+<section id="pybullet-with-tf-gym">
+<h2>PyBullet with TF &amp; Gym<a class="headerlink" href="#pybullet-with-tf-gym" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Kushal Agarwal.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
