@@ -1,10 +1,9 @@
 # Isaac Sim
 
-The following things are covered:
+The following things are covered for Isaac Sim here:
 
 ```{toctree}
 :maxdepth: 2
-:caption: Readings Ahead
 
 docker/docker
 filesystem

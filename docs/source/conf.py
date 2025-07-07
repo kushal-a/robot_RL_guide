@@ -35,6 +35,7 @@ html_static_path = ['_static']
 
 def setup(app):
     app.add_css_file('custom.css')
+    app.add_js_file('custom.js')
 
 html_theme_options = {
     'navigation_depth': 4,  # or however deep your TOC goes
