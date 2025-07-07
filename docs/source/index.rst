@@ -1,6 +1,6 @@
-.. My Project documentation master file
+.. Exploring Robot Reinforcement Learning Tools and Compatibilities documentation master file
 
-Welcome to My Project's documentation!
+Welcome to the documentation on Exploring Robot Reinforcement Learning Tools and Compatibilities!
 =======================================
 
 .. toctree::
