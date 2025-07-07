@@ -8,8 +8,8 @@ The image I used is:
     Tag: 4.5.0
 
 To run a container, use the following command.
-```console
-$ sudo docker run --name isaac-sim --entrypoint bash -it --runtime=nvidia --gpus all -e "ACCEPT_EULA=Y" --rm --network=host \
+```bash
+sudo docker run --name isaac-sim --entrypoint bash -it --runtime=nvidia --gpus all -e "ACCEPT_EULA=Y" --rm --network=host \
     -e "PRIVACY_CONSENT=Y" \
     -v ~/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw \
     -v ~/docker/isaac-sim/cache/ov:/root/.cache/ov:rw \
@@ -22,19 +22,19 @@ $ sudo docker run --name isaac-sim --entrypoint bash -it --runtime=nvidia --gpus
     nvcr.io/nvidia/isaac-sim:4.5.0
 ```
 To get container name, run 
-```console
-$ sudo docker ps
+```bash
+sudo docker ps
 ```
 in a new terminal. 
 
 To open a new terminal in existing running container of Isaac Sim, use the following command.
-```console
-$ sudo docker exec -ti isaac-sim bash
+```bash
+sudo docker exec -ti isaac-sim bash
 ```
 
 To save the container in its existing state,
-```console
-$ sudo docker commit -m <message> isaac-sim nvcr.io/nvidia/isaac-sim:4.5.0-cached
+```bash
+sudo docker commit -m <message> isaac-sim nvcr.io/nvidia/isaac-sim:4.5.0-cached
 ```
 Replace `cached` with any other tag you like.
 
