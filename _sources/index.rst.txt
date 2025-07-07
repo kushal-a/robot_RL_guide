@@ -1,4 +1,4 @@
-.. Exploring Robot Reinforcement Learning Tools and Compatibilities documentation master file
+.. Home
 
 Welcome to the documentation on Exploring Robot Reinforcement Learning Tools and Compatibilities!
 =======================================
