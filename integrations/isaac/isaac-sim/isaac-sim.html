@@ -58,6 +58,7 @@
 <li class="toctree-l4"><a class="reference internal" href="filesystem.html">Filesystem</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basics.html">Core Concepts</a></li>
 <li class="toctree-l4"><a class="reference internal" href="standalone_python/standalone_python.html">Standalone Python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#important-links">Important links</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#choosing-installation-method-clash-of-the-titans">Choosing installation method, clash of the titans</a></li>
 </ul>
 </li>
@@ -98,8 +99,6 @@
              
   <section id="isaac-sim">
 <h1>Isaac Sim<a class="headerlink" href="#isaac-sim" title="Link to this heading"></a></h1>
-<p><strong>Important links</strong></p>
-<p><a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/index.html">Documentation</a> | <a class="reference external" href="https://developer.nvidia.com/isaac/sim">Website</a></p>
 <p>The following things are covered:</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Readings Ahead</span></p>
@@ -117,6 +116,10 @@
 </li>
 </ul>
 </div>
+<section id="important-links">
+<h2>Important links<a class="headerlink" href="#important-links" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/index.html">Documentation</a> | <a class="reference external" href="https://developer.nvidia.com/isaac/sim">Website</a></p>
+</section>
 <section id="choosing-installation-method-clash-of-the-titans">
 <h2>Choosing installation method, clash of the titans<a class="headerlink" href="#choosing-installation-method-clash-of-the-titans" title="Link to this heading"></a></h2>
 <p>Native installation of Isaac Sim is stable. Isaac Sim requires CUDA to run the simulation on GPU. Tensorflow, which is a part of the other workflow, also requires CUDA to run its training on NVIDIA’s GPUs. Since we want to able to develop in both workflows on the same PCs, compatibility of drivers, CUDA, python and other dependencies is crucial. In addition to this, ROS has its own requirements and installation of python and its libraries. To prevent incompatibility among so many libraries and applications, we will be developing both these workflows and ROS in seperate docker containers. Hence, a containerized installation for Isaac Sim, and subsequently other applications/packages is chosen.</p>
