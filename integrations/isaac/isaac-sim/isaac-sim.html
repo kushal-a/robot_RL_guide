@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=92e647a2" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=116f5eed" />
 
   
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
@@ -54,7 +54,10 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Integrations</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../index.html">Isaac tools (and ROS)</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Isaac Sim</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#important-links">Important links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="docker/docker.html">Installation and Management of Isaac Sim Container in Docker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="filesystem.html">Filesystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basics.html">Core Concepts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="standalone_python/standalone_python.html">Standalone Python</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#choosing-installation-method-clash-of-the-titans">Choosing installation method, clash of the titans</a></li>
 </ul>
 </li>
@@ -95,15 +98,9 @@
              
   <section id="isaac-sim">
 <h1>Isaac Sim<a class="headerlink" href="#isaac-sim" title="Link to this heading"></a></h1>
-<section id="important-links">
-<h2>Important links<a class="headerlink" href="#important-links" title="Link to this heading"></a></h2>
+<p><strong>Important links</strong></p>
 <p><a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/index.html">Documentation</a> | <a class="reference external" href="https://developer.nvidia.com/isaac/sim">Website</a></p>
-</section>
-<section id="choosing-installation-method-clash-of-the-titans">
-<h2>Choosing installation method, clash of the titans<a class="headerlink" href="#choosing-installation-method-clash-of-the-titans" title="Link to this heading"></a></h2>
-<p>Native installation of Isaac Sim is stable. Isaac Sim requires CUDA to run the simulation on GPU. Tensorflow, which is a part of the other workflow, also requires CUDA to run its training on NVIDIA’s GPUs. Since we want to able to develop in both workflows on the same PCs, compatibility of drivers, CUDA, python and other dependencies is crucial. In addition to this, ROS has its own requirements and installation of python and its libraries. To prevent incompatibility among so many libraries and applications, we will be developing both these workflows and ROS in seperate docker containers. Hence, a containerized installation for Isaac Sim, and subsequently other applications/packages is chosen.</p>
-<p>Irrespective of the installation method, you will receive an <code class="docutils literal notranslate"><span class="pre">isaac-sim</span></code> folder which contains key plugins and scripts to interact with Isaac Sim. The contents and uses of this folder is discussed in <a class="reference internal" href="filesystem.html"><span class="std std-doc">Filesystem</span></a>.</p>
-<hr class="docutils" />
+<p>The following things are covered:</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Readings Ahead</span></p>
 <ul>
@@ -120,6 +117,10 @@
 </li>
 </ul>
 </div>
+<section id="choosing-installation-method-clash-of-the-titans">
+<h2>Choosing installation method, clash of the titans<a class="headerlink" href="#choosing-installation-method-clash-of-the-titans" title="Link to this heading"></a></h2>
+<p>Native installation of Isaac Sim is stable. Isaac Sim requires CUDA to run the simulation on GPU. Tensorflow, which is a part of the other workflow, also requires CUDA to run its training on NVIDIA’s GPUs. Since we want to able to develop in both workflows on the same PCs, compatibility of drivers, CUDA, python and other dependencies is crucial. In addition to this, ROS has its own requirements and installation of python and its libraries. To prevent incompatibility among so many libraries and applications, we will be developing both these workflows and ROS in seperate docker containers. Hence, a containerized installation for Isaac Sim, and subsequently other applications/packages is chosen.</p>
+<p>Irrespective of the installation method, you will receive an <code class="docutils literal notranslate"><span class="pre">isaac-sim</span></code> folder which contains key plugins and scripts to interact with Isaac Sim. The contents and uses of this folder is discussed in <a class="reference internal" href="filesystem.html"><span class="std std-doc">Filesystem</span></a>.</p>
 </section>
 </section>
 
