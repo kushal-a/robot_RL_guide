@@ -1,33 +1,8 @@
-# Integrations
-
-Docker images have been made for software that was developed in close proximity with each other.
-
-![framework](../images/framework.png)
-
-Clearly there are 2 workflows:
-1. [Isaac tools (and ROS)](#isaac-tools-and-ros)
-2. [Pybullet with TF & Gym](#pybullet-with-tf--gym)
-
-We will discuss each of there in detail.
-
-## Isaac tools (and ROS)
-
-This section will not cover core ROS but its only integrations with Isaac tools. The following will be discussed here.
-1. [Isaac Sim](#isaac-sim), for simulation
-2. [Isaac ROS](#isaac-ros), for integration
-3. [Isaac Lab](#isaac-lab), for learning
-
-There are 2 compatibilites to check: 
-| Interaction | Compatibility |
-|--|--|
-| Isaac Sim <-> Isaac Lab | As [recommended](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html#local-installation) by NVIDIA, Isaac Sim 4.5 and Isaac Lab 2.2 is currently supported as tested|
-| ROS <-> Isaac Sim | | 
-
-### Isaac Sim
+# Isaac Sim
 
 [Documentation](https://isaac-sim.github.io/IsaacLab/main/index.html) | [Website](https://developer.nvidia.com/isaac/sim)
 
-#### Choosing installation method, clash of the titans
+## Choosing installation method, clash of the titans
 Native installation of Isaac Sim is stable. Isaac Sim requires CUDA to run the simulation on GPU. Tensorflow, which is a part of the other workflow, also requires CUDA to run its training on NVIDIA's GPUs. Since we want to able to develop in both workflows on the same PCs, compatibility of drivers, CUDA, python and other dependencies is crucial. In addition to this, ROS has its own requirements and installation of python and its libraries. To prevent incompatibility among so many libraries and applications, we will be developing both these workflows and ROS in seperate docker containers. Hence, a containerized installation for Isaac Sim, and subsequently other applications/packages is chosen.
 
 Isaac Sim has been installed as a [docker image](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/installation/install_container.html). 
@@ -63,7 +38,7 @@ sudo docker commit -m <message> <container-name> nvcr.io/nvidia/isaac-sim:<new/o
 
 The drawback of of docker container installation is unavailability of direct GUI support. However, Isaac Sim has built in feature where the GUI is published/streamed. Docker installation of Isaac Sim has been designed for running on servers. Hence, one can connect remotely via NVIDIA's Omniverse Streaming Client to view the GUI. Here we will be running the server (docker container) and the streaming client on the same PC. The installation of the streaming client is included in the container installation steps of Isaac Sim.
 
-#### Inside the docker container
+## Inside the docker container
 
 Once in the bash of the docker container, we can start interacting with Isaac Sim. 
 
@@ -79,17 +54,9 @@ Isaac Sim has 3 [workflows](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/int
 
 The current set of of getting_started scripts and tutorials are designed for native installation. To run in streaming mode, the following modifications will ahve to be made.
 
-#### Standalone Python for docker installation (enabling streaming)
+## Standalone Python for docker installation (enabling streaming)
 
 
-
-
-### Isaac ROS
-
-### Isaac Lab
-
-
-## PyBullet with TF & Gym
 
 
 
