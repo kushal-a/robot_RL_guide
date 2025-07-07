@@ -7,4 +7,7 @@ Welcome to the documentation on Exploring Robot Reinforcement Learning Tools and
    :maxdepth: 2
    :caption: Contents:
 
-   index.md
+   intro
+   glossary
+   news
+   integrations/index
