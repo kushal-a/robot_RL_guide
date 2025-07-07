@@ -40,6 +40,7 @@ html_theme_options = {
     'collapse_navigation': False,
     'sticky_navigation': True,
     'navigation_depth': -1,
+    'titles_only': True
 }
 
 numfig = True  # If you want numbered figures/tables as well
