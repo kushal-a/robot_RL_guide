@@ -11,9 +11,8 @@ Clearly there are 2 workflows:
 We will discuss each of there in detail.
 
 ```{toctree}
-:maxdepth: 4
-:caption: Contents
-:numbered:
+:maxdepth: 1
+:hidden:
 
 isaac/index
 python/index
