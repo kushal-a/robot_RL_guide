@@ -2,3 +2,4 @@
 
 The package explore various tools available for Reinforcement learning for robotics applications
 
+[Get Started](./docs/source/index.rst)

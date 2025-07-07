@@ -12,11 +12,10 @@ There are 2 compatibilites to check:
 | ROS <-> Isaac Sim | | 
 
 ```{toctree}
-:maxdepth: 4
-:caption: Contents
-:numbered:
+:maxdepth: 1
+:hidden:
 
-isaac-sim
+isaac-sim/isaac-sim
 isaac-ros
-isaac-sim
+isaac-lab
 ```
