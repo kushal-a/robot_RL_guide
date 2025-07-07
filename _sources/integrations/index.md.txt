@@ -1,13 +1,3 @@
-```{toctree}
-:maxdepth: 4
-:caption: Contents
-:numbered:
-
-isaac/index
-python/index
-```
-
-
 # Integrations
 
 Docker images have been made for software that was developed in close proximity with each other.
@@ -20,3 +10,11 @@ Clearly there are 2 workflows:
 
 We will discuss each of there in detail.
 
+```{toctree}
+:maxdepth: 4
+:caption: Contents
+:numbered:
+
+isaac/index
+python/index
+```
