@@ -14,6 +14,6 @@ We will discuss each of there in detail.
 :maxdepth: 1
 :hidden:
 
-isaac/index
-python/index
+isaac
+python
 ```
