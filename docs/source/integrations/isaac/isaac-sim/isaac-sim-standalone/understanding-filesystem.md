@@ -1,4 +1,4 @@
-# Filesystem
+# Understanding Filesystem
 
 > [!NOTE]
 > This page can be skipped if you are using inly GUI.

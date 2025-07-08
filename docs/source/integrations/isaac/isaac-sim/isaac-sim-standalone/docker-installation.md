@@ -40,9 +40,15 @@ Replace `-cached` with any other tag you like.
 
 The drawback of of docker container installation is unavailability of direct GUI support. However, Isaac Sim has built in feature where the GUI is published/streamed. Docker installation of Isaac Sim has been designed for running on servers. Hence, one can connect remotely via NVIDIA's Omniverse Streaming Client to view the GUI. Here we will be running the server (docker container) and the streaming client on the same PC. The installation of the streaming client is included in the container installation steps of Isaac Sim.
 
-```{toctree}
-:maxdepth: 1
-:hidden:
 
-check_docker_installation
+For functionality, I have installed vim in the container and commited to the image. 
+
+# Running Isaac Sim in Docker
+
+Once in the bash of the docker container, we can start interacting with Isaac Sim. 
+
+To start Isaac Sim, run,
+```console
+./runheadless.sh -v
 ```
+Remember to use the streaming client to view the GUI.

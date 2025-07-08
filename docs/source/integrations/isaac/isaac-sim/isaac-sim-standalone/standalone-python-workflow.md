@@ -10,8 +10,12 @@ The `standalone_examples` folder contains several python scripts for interacting
 
 Unfortunately, most of the scripts in here have only been tested for native installation of Isaac Sim. So we will have to modify them to suit our needs.
 
+There are bunch of examples avaible to explore various tasks in Isaac Sim. Although, not all of these are available in the standalone examples workflow. A summary of the availability is needed. It would also be good practice to convert examples available only in GUI or scripting to standalone_python scripts.
+
 ```{toctree}
 :maxdepth: 1
 
-standalone_examples
+standalone-python-workflow/standalone_examples
+standalone-python-workflow/examples
+
 ```
