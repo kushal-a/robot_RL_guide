@@ -1,7 +1,8 @@
 # Understanding Filesystem
 
-> [!NOTE]
-> This page can be skipped if you are using inly GUI.
+Note
+
+This page can be skipped if you are using inly GUI.
 
 In the `/` folder, apart from standard ubuntu folder, there is the `isaac-sim` folder. Docker opens uses this folder as the initial working directory.
 
