@@ -10,7 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=b4d26a52" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=74ad586f" />
 
   
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
@@ -120,7 +120,6 @@
 <li class="toctree-l2"><a class="reference internal" href="isaac-sim/isaac-sim-standalone/understanding-filesystem.html">Understanding Filesystem</a></li>
 <li class="toctree-l2"><a class="reference internal" href="isaac-sim/isaac-sim-standalone/basics.html">Core Concepts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="isaac-sim/isaac-sim-standalone/standalone-python-workflow.html">Standalone Python</a></li>
-<li class="toctree-l2"><a class="reference internal" href="isaac-sim/isaac-sim-standalone.html#how-ros-fits-in">How ROS fits in</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="isaac-sim/isaac-sim-with-ros.html">Isaac Sim integration with ROS</a><ul>
@@ -141,6 +140,28 @@ Unless you are simulating hundreds of rigid bodies and robots, it is more effici
 <h2>Choosing installation method, clash of the titans<a class="headerlink" href="#choosing-installation-method-clash-of-the-titans" title="Link to this heading"></a></h2>
 <p>Native installation of Isaac Sim is stable. Isaac Sim requires CUDA to run the simulation on GPU. Tensorflow, which is a part of the other workflow, also requires CUDA to run its training on NVIDIA’s GPUs. Since we want to able to develop in both workflows on the same PCs, compatibility of drivers, CUDA, python and other dependencies is crucial. In addition to this, ROS has its own requirements and installation of python and its libraries. To prevent incompatibility among so many libraries and applications, we will be developing both these workflows and ROS in seperate docker containers. Hence, a containerized installation for Isaac Sim, and subsequently other applications/packages is chosen.</p>
 <p>Irrespective of the installation method, you will receive an <code class="docutils literal notranslate"><span class="pre">isaac-sim</span></code> folder which contains key plugins and scripts to interact with Isaac Sim. The contents and uses of this folder is discussed in <a class="reference internal" href="#./filesystem.md"><span class="xref myst">Filesystem</span></a>.</p>
+</section>
+<section id="how-ros-fits-in">
+<h2>How ROS fits in<a class="headerlink" href="#how-ros-fits-in" title="Link to this heading"></a></h2>
+<p>Since Isaac Sim is just a simulator, it has to be used for “something”. NVIDIA calls this something as digital twin, fancy word for robot inside screen. But what can we do with having a digital twin.</p>
+<p>Applications:</p>
+<ol class="arabic">
+<li><p>Synthetic Data Generation</p>
+<p>Usually simualators just take information, run some physics and spit some information back. But when using Isaac Sim for some larger ML application, sometimes the data might not be enough.</p>
+<p>Example:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Problem - Cannot get data of all possible lighting conditions for      street mapping
+Solution - Simulate in simulator to control lighting conditions.
+New Problem - Too many environments to configure
+Solution - NVIDIA uses Replicator to randomize lighting, generating data for Isaac Sim
+</pre></div>
+</div>
+<p>Replicator can randomize any variable for synthetic data generation</p>
+</li>
+<li><p>Software in Loop:   Run your robotics stack on PC for testing</p></li>
+<li><p>Hardware in Loop: Run your robotics stack on hardware (eg.Jetson) for testing</p></li>
+<li><p>CI/CD</p></li>
+</ol>
+<p>For this we need Isaac Sim to communicate with bunch of other robotics software in the same PC/network. ROS is the perfect middleware for this. So we need Isaac Sim to talk to ROS. Isaac Sim does this by becoming a ROS node itself.</p>
 </section>
 </section>
 
