@@ -32,8 +32,8 @@ The following are the compatibility of these examples with different Isaac Sim w
     - No sensor plugin available
 *   - IMU 
     - ✅
-    - 
-    - ❌
+    - ✅
+    - ✅
 *   - Contact 
     - 
     - 
