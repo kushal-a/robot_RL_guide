@@ -19,6 +19,9 @@ The following are the compatibility of these examples with different Isaac Sim w
     - Scripting
     - Standalone Python
 *   - **Sensors**
+    - 
+    - 
+    - 
 *   - LIDAR
     - ✅
     - ✅
@@ -28,7 +31,7 @@ The following are the compatibility of these examples with different Isaac Sim w
     - not the spawing
     - No sensor plugin available
 *   - IMU 
-    - 
+    - ✅
     - 
     - ❌
 *   - Contact 
