@@ -11,14 +11,30 @@
 
 The following are the compatibility of these examples with different Isaac Sim workflow. ROS examples from the list will be covered [later](../../isaac-sim-with-ros/tutorials.md).
 
+:::{list-table}
+:widths: 30% 20% 25% 25%
+:header_rows: 1
+
+*   - Example Name
+    - GUI
+    - Scripting
+    - Standalone Python
+*   - **Sensors**
+*   - LIDAR
+    - ✅
+    - ✅
+    - ✅
+
+
+
 | Example | GUI | Scripting | Standalone Python |
 |---------|:------:|:----------:|:------------------:|
-| Sensors | | | |
+| **Sensors** | | | |
 | LIDAR   | ✅|✅ |  ✅|
 | Custom Pattern Range Sensor | ✅| not the spawing|
 | IMU | | |
 | Contact | | |
-| Input Devices | | |
+| **Input Devices** | | |
 | Kaya Gamepad | | |
 | Omnigraph Keyboard | | |
 | Mannipulation | | |
