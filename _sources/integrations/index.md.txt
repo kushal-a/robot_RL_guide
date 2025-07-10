@@ -2,7 +2,12 @@
 
 Docker images have been made for software that was developed in close proximity with each other.
 
-![framework](../images/framework.png)
+
+```{image} ../images/framework.png
+:class: bg-primary
+:align: center
+:width: 100%
+```
 
 Clearly there are 2 workflows:
 1. [Isaac tools (and ROS)](#isaac-tools-and-ros)

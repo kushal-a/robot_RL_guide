@@ -14,8 +14,8 @@ The following are the compatibility of these examples with different Isaac Sim w
 | Example | GUI | Scripting | Standalone Python |
 |---------|:------:|:----------:|:------------------:|
 | Sensors | | | |
-| LIDAR   | ✅|✅ | ❌ |
-| Custom Pattern Range Sensor | | |
+| LIDAR   | ✅|✅ |  ✅|
+| Custom Pattern Range Sensor | ✅| not the spawing|
 | IMU | | |
 | Contact | | |
 | Input Devices | | |

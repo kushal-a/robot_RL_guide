@@ -64,13 +64,12 @@ simulation_app.update()
 
 For details, refer to `standalone_examples/api/isaac-sim.simulation_app/livestream.py`
 
-Tip
-
+:::{tip}
 To check is streaming app is still working, use
 ```python
 while simulation_app._app.is_running() and not simulation_app.is_exiting():
 ```
-
+:::
 ## API
 
 ## Benchmarks

@@ -131,10 +131,9 @@
 <section id="important-links">
 <h2>Important links<a class="headerlink" href="#important-links" title="Link to this heading"></a></h2>
 <p><a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/index.html">Documentation</a> | <a class="reference external" href="https://developer.nvidia.com/isaac/sim">Website</a> | <a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/introduction/reference_architecture.html">Reference Architecture</a> (this is a must read)</p>
-<blockquote>
-<div><p>[!TIP]
-Unless you are simulating hundreds of rigid bodies and robots, it is more efficient to use the CPU solver instead of the GPU solver. Refer to the Environment Setup tutorial</p>
-</div></blockquote>
+<p>:::{tip}
+Unless you are simulating hundreds of rigid bodies and robots, it is more efficient to use the CPU solver instead of the GPU solver. Refer to the Environment Setup tutorial
+:::</p>
 </section>
 <section id="choosing-installation-method-clash-of-the-titans">
 <h2>Choosing installation method, clash of the titans<a class="headerlink" href="#choosing-installation-method-clash-of-the-titans" title="Link to this heading"></a></h2>
@@ -149,12 +148,12 @@ Unless you are simulating hundreds of rigid bodies and robots, it is more effici
 <li><p>Synthetic Data Generation</p>
 <p>Usually simualators just take information, run some physics and spit some information back. But when using Isaac Sim for some larger ML application, sometimes the data might not be enough.</p>
 <p>Example:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Problem - Cannot get data of all possible lighting conditions for      street mapping
-Solution - Simulate in simulator to control lighting conditions.
-New Problem - Too many environments to configure
-Solution - NVIDIA uses Replicator to randomize lighting, generating data for Isaac Sim
-</pre></div>
-</div>
+<blockquote>
+<div><p>:Problem: Cannot get data of all possible lighting conditions for      street mapping
+:Solution: Simulate in simulator to control lighting conditions.
+:New Problem: Too many environments to configure
+:Solution: NVIDIA uses Replicator to randomize lighting, generating data for Isaac Sim</p>
+</div></blockquote>
 <p>Replicator can randomize any variable for synthetic data generation</p>
 </li>
 <li><p>Software in Loop:   Run your robotics stack on PC for testing</p></li>
