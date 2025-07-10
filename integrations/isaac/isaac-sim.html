@@ -109,7 +109,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="isaac-sim">
+  <section class="tex2jax_ignore mathjax_ignore" id="isaac-sim">
 <h1>Isaac Sim<a class="headerlink" href="#isaac-sim" title="Link to this heading"></a></h1>
 <p>The following things are covered for Isaac Sim here:</p>
 <div class="toctree-wrapper compound">
@@ -131,9 +131,10 @@
 <section id="important-links">
 <h2>Important links<a class="headerlink" href="#important-links" title="Link to this heading"></a></h2>
 <p><a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/index.html">Documentation</a> | <a class="reference external" href="https://developer.nvidia.com/isaac/sim">Website</a> | <a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/introduction/reference_architecture.html">Reference Architecture</a> (this is a must read)</p>
-<p>:::{tip}
-Unless you are simulating hundreds of rigid bodies and robots, it is more efficient to use the CPU solver instead of the GPU solver. Refer to the Environment Setup tutorial
-:::</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Unless you are simulating hundreds of rigid bodies and robots, it is more efficient to use the CPU solver instead of the GPU solver. Refer to the Environment Setup tutorial</p>
+</div>
 </section>
 <section id="choosing-installation-method-clash-of-the-titans">
 <h2>Choosing installation method, clash of the titans<a class="headerlink" href="#choosing-installation-method-clash-of-the-titans" title="Link to this heading"></a></h2>
@@ -149,10 +150,20 @@ Unless you are simulating hundreds of rigid bodies and robots, it is more effici
 <p>Usually simualators just take information, run some physics and spit some information back. But when using Isaac Sim for some larger ML application, sometimes the data might not be enough.</p>
 <p>Example:</p>
 <blockquote>
-<div><p>:Problem: Cannot get data of all possible lighting conditions for      street mapping
-:Solution: Simulate in simulator to control lighting conditions.
-:New Problem: Too many environments to configure
-:Solution: NVIDIA uses Replicator to randomize lighting, generating data for Isaac Sim</p>
+<div><dl class="myst field-list simple">
+<dt class="field-odd">Problem<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Cannot get data of all possible lighting conditions for      street mapping</p>
+</dd>
+<dt class="field-even">Solution<span class="colon">:</span></dt>
+<dd class="field-even"><p>Simulate in simulator to control lighting conditions.</p>
+</dd>
+<dt class="field-odd">New Problem<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Too many environments to configure</p>
+</dd>
+<dt class="field-even">Solution<span class="colon">:</span></dt>
+<dd class="field-even"><p>NVIDIA uses Replicator to randomize lighting, generating data for Isaac Sim</p>
+</dd>
+</dl>
 </div></blockquote>
 <p>Replicator can randomize any variable for synthetic data generation</p>
 </li>
