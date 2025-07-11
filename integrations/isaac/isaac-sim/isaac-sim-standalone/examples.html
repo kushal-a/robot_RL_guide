@@ -1,0 +1,345 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examples from documentation &mdash; Exploring Robot Reinforcement Learning Tools and Compatibilities 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/custom.css?v=74ad586f" />
+
+  
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Isaac Sim integration with ROS" href="../isaac-sim-with-ros.html" />
+    <link rel="prev" title="Replicator in standalone_examples" href="standalone-python-workflow/standalone_examples/replicator.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Exploring Robot Reinforcement Learning Tools and Compatibilities
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../intro.html#context">Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../news.html">News and Updates</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Integrations</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../../isaac.html">Isaac tools (and ROS)</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../../isaac-sim.html">Isaac Sim</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../isaac-sim-standalone.html">Isaac Sim</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="docker-installation.html">Installation and Management of Isaac Sim Container in Docker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="docker-installation.html#running-isaac-sim-in-docker">Running Isaac Sim in Docker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="understanding-filesystem.html">Understanding Filesystem</a></li>
+<li class="toctree-l5"><a class="reference internal" href="basics.html">Core Concepts</a></li>
+<li class="toctree-l5"><a class="reference internal" href="standalone-python-workflow.html">Standalone Python</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="standalone-python-workflow/using-standalone-examples-in-docker.html">Standalone examples for Docker</a></li>
+<li class="toctree-l6"><a class="reference internal" href="standalone-python-workflow/standalone_examples.html"><code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code> shippped with Isaac-Sim</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="standalone-python-workflow/standalone_examples/api.html">API in <code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code></a></li>
+<li class="toctree-l7"><a class="reference internal" href="standalone-python-workflow/standalone_examples/replicator.html">Replicator in <code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Examples from documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../isaac-sim-with-ros.html">Isaac Sim integration with ROS</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../isaac-sim-with-ros/tutorials.html">Examples from documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../isaac-ros.html">Isaac ROS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../isaac-lab.html">Isaac Lab</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../python.html">PyBullet with TF &amp; Gym</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Exploring Robot Reinforcement Learning Tools and Compatibilities</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Integrations</a></li>
+          <li class="breadcrumb-item"><a href="../../../isaac.html">Isaac tools (and ROS)</a></li>
+          <li class="breadcrumb-item"><a href="../../isaac-sim.html">Isaac Sim</a></li>
+          <li class="breadcrumb-item"><a href="../isaac-sim-standalone.html">Isaac Sim</a></li>
+      <li class="breadcrumb-item active">Examples from documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/integrations/isaac/isaac-sim/isaac-sim-standalone/examples.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="examples-from-documentation">
+<h1>Examples from documentation<a class="headerlink" href="#examples-from-documentation" title="Link to this heading"></a></h1>
+<section id="important-links">
+<h2>Important Links<a class="headerlink" href="#important-links" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/introduction/examples.html">How to run examples</a></p>
+</section>
+<section id="list-of-examples">
+<h2>List of Examples<a class="headerlink" href="#list-of-examples" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/introduction/examples.html">List</a></p>
+<p>The following are the compatibility of these examples with different Isaac Sim workflow. ROS examples from the list will be covered <a class="reference internal" href="#../../isaac-sim-with-ros/tutorials.md"><span class="xref myst">later</span></a>.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>Example Name</p></td>
+<td><p>GUI</p></td>
+<td><p>Scripting</p></td>
+<td><p>Standalone Python</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Sensors</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>LIDAR</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-even"><td><p>Custom Pattern Range Sensor</p></td>
+<td><p>✅</p></td>
+<td><p>not the spawing</p></td>
+<td><p>No sensor plugin available</p></td>
+</tr>
+<tr class="row-odd"><td><p>IMU</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-even"><td><p>Contact</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Input Devices</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Kaya Gamepad</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Omnigraph Keyboard</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Mannipulation</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Follow Target</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Path Planning</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>✅ (<a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/manipulators/manipulators_lula_rrt.html#isaac-sim-app-tutorial-motion-generation-rrt">here</a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Simple Stack</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Bin Filling</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Replay Follow Target</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Surface Gripper</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>✅ (<a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/robot_simulation/ext_isaacsim_robot_surface_gripper.html#isaac-surface-grippers">here</a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Multi-Robot</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Robo Party</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Robo Factory</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>General</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Hello World</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Policy</strong> - covered <a class="reference internal" href="#../../../isaac-lab.md"><span class="xref myst">later</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Quadruped</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Humanod</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Cortex</strong> - covered <a class="reference internal" href="#../../isaac-sim-with-digital-twin.md"><span class="xref myst">later</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>UR 10 palletizing</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td><p>Franka Cortex Examples</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Import Robots</strong></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Carter URDF</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Franka URDF</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kaya URDF</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>UR10 URDF</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Tutorials</strong> - already covered <a class="reference internal" href="#./standalone_examples.md/#tutorials"><span class="xref myst">here</span></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>TODO</p>
+<p>Standalone python script for:</p>
+<dl class="myst field-list simple">
+<dt class="field-odd">URDF importing<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="standalone-python-workflow/standalone_examples.html#asset"><span class="std std-ref">refer</span></a></p>
+</dd>
+<dt class="field-even">Multi robot systems<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">Manipulation tasks<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Input device interfacing<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="standalone-python-workflow/standalone_examples/replicator.html" class="btn btn-neutral float-left" title="Replicator in standalone_examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../isaac-sim-with-ros.html" class="btn btn-neutral float-right" title="Isaac Sim integration with ROS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Kushal Agarwal.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

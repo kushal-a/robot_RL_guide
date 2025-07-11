@@ -2,7 +2,7 @@
 
 [Source Code, I guess](https://github.com/isaac-sim/IsaacSim/tree/main/source/standalone_examples)
 
-Each of the sub heading are folders in `standalone_examples`.
+Each of the sub heading are folders in `standalone_examples`. All these files have to modified to run in docker as mentioned in the previous section.
 
 ## Tutorials
 
@@ -13,70 +13,42 @@ Run as
 ./python.sh standalone_examples/tutorials/getting_started.py
 ```
 
-Unfortunately, does not work in Docker installation.
+## Testing
+Directory for testing scripts. Kindly ignore.
 
-### Running tutorials in Docker installation
+## Data
+Aasset Data (eg CAD files) references in other examples
 
-For each of the files perform the following.
+## Benchmark
+Used for benchmarking Isaac Sim. Not covered Here
 
-Replace 
-```python
-simulation_app = SimulationApp({"headless": False})
+
+## Notebooks
+Contains files `hello_world.ipynb` and `scene_generation.ipynb`. Basically, standalone python scripts that can be run from jupyter. This will allow more dynamic control over the simulation than running standalone python scripts. At the same type, it more firendly compared to scripting. 
+
+If you are starting for the first time, run
+```bash
+./jupyter_notebook.sh
 ```
+If using docker, add `--allow-root`
 
-with
+From the next time, `jupyter` is available as CLI like full installation. If using docker, add `--allow-root` when starting jupyter server.
 
-```python
-# This sample enables a livestream server to connect to when running headless
-CONFIG = {
-    "width": 1280,
-    "height": 720,
-    "window_width": 1920,
-    "window_height": 1080,
-    "headless": True,
-    "hide_ui": False,  # Show the GUI
-    "renderer": "RaytracedLighting",
-    "display_options": 3286,  # Set display options to show default grid
-}
+On running the server, a link will be provided to view jupyter client. This works in both standalone installation and docker.
+
+If you are using docker, follow steps mentioned in the previous section in jupyter notebooks as well.
 
 
-# Start the omniverse application
-simulation_app = SimulationApp(launch_config=CONFIG)
-
-from isaacsim.core.utils.extensions import enable_extension
-
-# Default Livestream settings
-simulation_app.set_setting("/app/window/drawMouse", True)
-
-# Enable Livestream extension
-enable_extension("omni.kit.livestream.webrtc")
-```
-
-Whereever there is 
-```python
-my_world.step(render=True)
-```
-
-add below it
-```python
-simulation_app.update()
-```
-
-For details, refer to `standalone_examples/api/isaac-sim.simulation_app/livestream.py`
-
-:::{tip}
-To check is streaming app is still working, use
-```python
-while simulation_app._app.is_running() and not simulation_app.is_exiting():
-```
-:::
 ## API
+Contains files whose content can be used to make our own simulation.
 
-## Benchmarks
 
 ## Replicator
+Contains files whose content can be used to run Omniverse Replicator.
 
-## Testing
+```{toctree}
+:maxdepth: 1
 
-
-
+standalone_examples/api
+standalone_examples/replicator
+```

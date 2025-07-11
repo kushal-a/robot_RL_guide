@@ -15,7 +15,6 @@ There are bunch of examples avaible to explore various tasks in Isaac Sim. Altho
 ```{toctree}
 :maxdepth: 1
 
+standalone-python-workflow/using-standalone-examples-in-docker
 standalone-python-workflow/standalone_examples
-standalone-python-workflow/examples
-
 ```

@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Examples from documentation &mdash; Exploring Robot Reinforcement Learning Tools and Compatibilities 1.0 documentation</title>
+  <title>Standalone examples for Docker &mdash; Exploring Robot Reinforcement Learning Tools and Compatibilities 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
@@ -23,8 +23,8 @@
     <script src="../../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
-    <link rel="next" title="Isaac Sim integration with ROS" href="../../isaac-sim-with-ros.html" />
-    <link rel="prev" title="standalone_examples shippped with Isaac-Sim" href="standalone_examples.html" /> 
+    <link rel="next" title="standalone_examples shippped with Isaac-Sim" href="standalone_examples.html" />
+    <link rel="prev" title="Standalone Python" href="../standalone-python-workflow.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -60,10 +60,15 @@
 <li class="toctree-l5"><a class="reference internal" href="../understanding-filesystem.html">Understanding Filesystem</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../basics.html">Core Concepts</a></li>
 <li class="toctree-l5 current"><a class="reference internal" href="../standalone-python-workflow.html">Standalone Python</a><ul class="current">
-<li class="toctree-l6"><a class="reference internal" href="standalone_examples.html"><code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code> shippped with Isaac-Sim</a></li>
-<li class="toctree-l6 current"><a class="current reference internal" href="#">Examples from documentation</a></li>
+<li class="toctree-l6 current"><a class="current reference internal" href="#">Standalone examples for Docker</a></li>
+<li class="toctree-l6"><a class="reference internal" href="standalone_examples.html"><code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code> shippped with Isaac-Sim</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="standalone_examples/api.html">API in <code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code></a></li>
+<li class="toctree-l7"><a class="reference internal" href="standalone_examples/replicator.html">Replicator in <code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code></a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../examples.html">Examples from documentation</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../../isaac-sim-with-ros.html">Isaac Sim integration with ROS</a><ul>
@@ -102,9 +107,9 @@
           <li class="breadcrumb-item"><a href="../../../isaac-sim.html">Isaac Sim</a></li>
           <li class="breadcrumb-item"><a href="../../isaac-sim-standalone.html">Isaac Sim</a></li>
           <li class="breadcrumb-item"><a href="../standalone-python-workflow.html">Standalone Python</a></li>
-      <li class="breadcrumb-item active">Examples from documentation</li>
+      <li class="breadcrumb-item active">Standalone examples for Docker</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../../../_sources/integrations/isaac/isaac-sim/isaac-sim-standalone/standalone-python-workflow/examples.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../../../../_sources/integrations/isaac/isaac-sim/isaac-sim-standalone/standalone-python-workflow/using-standalone-examples-in-docker.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -112,194 +117,63 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section class="tex2jax_ignore mathjax_ignore" id="examples-from-documentation">
-<h1>Examples from documentation<a class="headerlink" href="#examples-from-documentation" title="Link to this heading"></a></h1>
-<section id="important-links">
-<h2>Important Links<a class="headerlink" href="#important-links" title="Link to this heading"></a></h2>
-<p><a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/introduction/examples.html">How to run examples</a></p>
-</section>
-<section id="list-of-examples">
-<h2>List of Examples<a class="headerlink" href="#list-of-examples" title="Link to this heading"></a></h2>
-<p><a class="reference external" href="https://docs.isaacsim.omniverse.nvidia.com/4.5.0/introduction/examples.html">List</a></p>
-<p>The following are the compatibility of these examples with different Isaac Sim workflow. ROS examples from the list will be covered <a class="reference internal" href="../../isaac-sim-with-ros/tutorials.html"><span class="std std-doc">later</span></a>.</p>
-<table class="docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p>Example Name</p></td>
-<td><p>GUI</p></td>
-<td><p>Scripting</p></td>
-<td><p>Standalone Python</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Sensors</strong></p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>LIDAR</p></td>
-<td><p>✅</p></td>
-<td><p>✅</p></td>
-<td><p>✅</p></td>
-</tr>
-<tr class="row-even"><td><p>Custom Pattern Range Sensor</p></td>
-<td><p>✅</p></td>
-<td><p>not the spawing</p></td>
-<td><p>No sensor plugin available</p></td>
-</tr>
-<tr class="row-odd"><td><p>IMU</p></td>
-<td><p>✅</p></td>
-<td><p>✅</p></td>
-<td><p>✅</p></td>
-</tr>
-<tr class="row-even"><td><p>Contact</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Input Devices</strong></p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>Kaya Gamepad</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>Omnigraph Keyboard</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p><strong>Mannipulation</strong></p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>Follow Target</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>Path Planning</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>Simple Stack</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>Bin Filling</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>Replay Follow Target</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>Surface Gripper</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>**Multi-Robot **</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>Robo Party</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>Robo Factory</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>**General **</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>Hello World</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p><strong>Policy</strong></p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>Quadruped</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>Humanod</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Cortex</strong></p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>UR 10 palletizing</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>Franka Cortex Examples</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p><strong>Import Robots</strong></p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>Carter URDF</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>Franka URDF</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>Kaya URDF</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>UR10 URDF</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Tutorials</strong> - already covered <a class="reference internal" href="standalone_examples.html#tutorials"><span class="std std-ref">here</span></a></p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="standalone-examples-for-docker">
+<h1>Standalone examples for Docker<a class="headerlink" href="#standalone-examples-for-docker" title="Link to this heading"></a></h1>
+<p>To run standalone python <code class="docutils literal notranslate"><span class="pre">.py</span></code> scripts available from NVIDIA in a container installation of Isaac Sim whilst using streaming client, the following change has to be made.</p>
+<p>Replace</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">simulation_app</span> <span class="o">=</span> <span class="n">SimulationApp</span><span class="p">({</span><span class="s2">&quot;headless&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">})</span>
+</pre></div>
+</div>
+<p>with</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This sample enables a livestream server to connect to when running headless</span>
+<span class="n">CONFIG</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="mi">1280</span><span class="p">,</span>
+    <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="mi">720</span><span class="p">,</span>
+    <span class="s2">&quot;window_width&quot;</span><span class="p">:</span> <span class="mi">1920</span><span class="p">,</span>
+    <span class="s2">&quot;window_height&quot;</span><span class="p">:</span> <span class="mi">1080</span><span class="p">,</span>
+    <span class="s2">&quot;headless&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">&quot;hide_ui&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>  <span class="c1"># Show the GUI</span>
+    <span class="s2">&quot;renderer&quot;</span><span class="p">:</span> <span class="s2">&quot;RaytracedLighting&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;display_options&quot;</span><span class="p">:</span> <span class="mi">3286</span><span class="p">,</span>  <span class="c1"># Set display options to show default grid</span>
+<span class="p">}</span>
+
+
+<span class="c1"># Start the omniverse application</span>
+<span class="n">simulation_app</span> <span class="o">=</span> <span class="n">SimulationApp</span><span class="p">(</span><span class="n">launch_config</span><span class="o">=</span><span class="n">CONFIG</span><span class="p">)</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">isaacsim.core.utils.extensions</span><span class="w"> </span><span class="kn">import</span> <span class="n">enable_extension</span>
+
+<span class="c1"># Default Livestream settings</span>
+<span class="n">simulation_app</span><span class="o">.</span><span class="n">set_setting</span><span class="p">(</span><span class="s2">&quot;/app/window/drawMouse&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Enable Livestream extension</span>
+<span class="n">enable_extension</span><span class="p">(</span><span class="s2">&quot;omni.kit.livestream.webrtc&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Whereever there is</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_world</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">render</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>add below it</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">simulation_app</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>For details, refer to <code class="docutils literal notranslate"><span class="pre">standalone_examples/api/isaac-sim.simulation_app/livestream.py</span></code></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To check is streaming app is still working, use</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">simulation_app</span><span class="o">.</span><span class="n">_app</span><span class="o">.</span><span class="n">is_running</span><span class="p">()</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">simulation_app</span><span class="o">.</span><span class="n">is_exiting</span><span class="p">():</span>
+</pre></div>
+</div>
+</div>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="standalone_examples.html" class="btn btn-neutral float-left" title="standalone_examples shippped with Isaac-Sim" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../../isaac-sim-with-ros.html" class="btn btn-neutral float-right" title="Isaac Sim integration with ROS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../standalone-python-workflow.html" class="btn btn-neutral float-left" title="Standalone Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="standalone_examples.html" class="btn btn-neutral float-right" title="standalone_examples shippped with Isaac-Sim" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

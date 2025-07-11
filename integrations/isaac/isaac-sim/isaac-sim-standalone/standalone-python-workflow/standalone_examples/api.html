@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API in standalone_examples &mdash; Exploring Robot Reinforcement Learning Tools and Compatibilities 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../../../_static/custom.css?v=74ad586f" />
+
+  
+      <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../../_static/documentation_options.js?v=f2a433a1"></script>
+      <script src="../../../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" />
+    <link rel="next" title="Replicator in standalone_examples" href="replicator.html" />
+    <link rel="prev" title="standalone_examples shippped with Isaac-Sim" href="../standalone_examples.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../index.html" class="icon icon-home">
+            Exploring Robot Reinforcement Learning Tools and Compatibilities
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../intro.html#context">Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../news.html">News and Updates</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../../index.html">Integrations</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../../../../isaac.html">Isaac tools (and ROS)</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../../../../isaac-sim.html">Isaac Sim</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../../../isaac-sim-standalone.html">Isaac Sim</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="../../docker-installation.html">Installation and Management of Isaac Sim Container in Docker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../docker-installation.html#running-isaac-sim-in-docker">Running Isaac Sim in Docker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../understanding-filesystem.html">Understanding Filesystem</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../basics.html">Core Concepts</a></li>
+<li class="toctree-l5 current"><a class="reference internal" href="../../standalone-python-workflow.html">Standalone Python</a><ul class="current">
+<li class="toctree-l6"><a class="reference internal" href="../using-standalone-examples-in-docker.html">Standalone examples for Docker</a></li>
+<li class="toctree-l6 current"><a class="reference internal" href="../standalone_examples.html"><code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code> shippped with Isaac-Sim</a><ul class="current">
+<li class="toctree-l7 current"><a class="current reference internal" href="#">API in <code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code></a></li>
+<li class="toctree-l7"><a class="reference internal" href="replicator.html">Replicator in <code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../../examples.html">Examples from documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../../isaac-sim-with-ros.html">Isaac Sim integration with ROS</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../isaac-sim-with-ros/tutorials.html">Examples from documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../isaac-ros.html">Isaac ROS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../isaac-lab.html">Isaac Lab</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../python.html">PyBullet with TF &amp; Gym</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../index.html">Exploring Robot Reinforcement Learning Tools and Compatibilities</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../index.html">Integrations</a></li>
+          <li class="breadcrumb-item"><a href="../../../../../isaac.html">Isaac tools (and ROS)</a></li>
+          <li class="breadcrumb-item"><a href="../../../../isaac-sim.html">Isaac Sim</a></li>
+          <li class="breadcrumb-item"><a href="../../../isaac-sim-standalone.html">Isaac Sim</a></li>
+          <li class="breadcrumb-item"><a href="../../standalone-python-workflow.html">Standalone Python</a></li>
+          <li class="breadcrumb-item"><a href="../standalone_examples.html"><code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code> shippped with Isaac-Sim</a></li>
+      <li class="breadcrumb-item active">API in <code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../../../_sources/integrations/isaac/isaac-sim/isaac-sim-standalone/standalone-python-workflow/standalone_examples/api.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="api-in-standalone-examples">
+<h1>API in <code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code><a class="headerlink" href="#api-in-standalone-examples" title="Link to this heading"></a></h1>
+<p>API is divided in the following groups</p>
+<section id="asset">
+<h2>Asset<a class="headerlink" href="#asset" title="Link to this heading"></a></h2>
+<p>script for URDF import</p>
+</section>
+<section id="core">
+<h2>Core<a class="headerlink" href="#core" title="Link to this heading"></a></h2>
+<p>There are two types of core functions covered.</p>
+<section id="api">
+<h3>API<a class="headerlink" href="#api" title="Link to this heading"></a></h3>
+<p>There are scripts that perform standard actions. This includes:</p>
+<ol class="arabic simple">
+<li><p>Adding Cubes</p></li>
+<li><p>adding Franka Robot</p></li>
+<li><p>Adding a cloth</p></li>
+<li><p>Controlling a robot: Joint position controller for a manipulator</p></li>
+<li><p>Logging Data</p></li>
+<li><p>Derfmable objects</p></li>
+<li><p>Viewing Contact data</p></li>
+<li><p>Making omnigraph triggers</p></li>
+<li><p>rigit contact viewing</p></li>
+<li><p>simulating a robot</p></li>
+<li><p>simulation callbacks</p></li>
+<li><p>time stepping</p></li>
+<li><p>Visualizing materials</p></li>
+</ol>
+</section>
+<section id="cloner">
+<h3>Cloner<a class="headerlink" href="#cloner" title="Link to this heading"></a></h3>
+<p>A script that creates clones of ants. This can be used to spawn a large number of robots and managee its articulation.</p>
+</section>
+</section>
+<section id="cortex">
+<h2>Cortex<a class="headerlink" href="#cortex" title="Link to this heading"></a></h2>
+<p>TODO</p>
+<section id="replicator">
+<h3>Replicator<a class="headerlink" href="#replicator" title="Link to this heading"></a></h3>
+</section>
+<section id="behaviour">
+<h3>Behaviour<a class="headerlink" href="#behaviour" title="Link to this heading"></a></h3>
+</section>
+<section id="domain-randomization-examples">
+<h3>Domain Randomization## Examples<a class="headerlink" href="#domain-randomization-examples" title="Link to this heading"></a></h3>
+</section>
+</section>
+<section id="robot">
+<h2>Robot<a class="headerlink" href="#robot" title="Link to this heading"></a></h2>
+<p>TODO</p>
+<section id="manipulator">
+<h3>Manipulator<a class="headerlink" href="#manipulator" title="Link to this heading"></a></h3>
+</section>
+<section id="policy">
+<h3>Policy<a class="headerlink" href="#policy" title="Link to this heading"></a></h3>
+</section>
+<section id="wheeled-robots">
+<h3>Wheeled Robots<a class="headerlink" href="#wheeled-robots" title="Link to this heading"></a></h3>
+</section>
+</section>
+<section id="ros-bridge">
+<h2>ROS bridge<a class="headerlink" href="#ros-bridge" title="Link to this heading"></a></h2>
+<p>Making ROS nodes to publish or subscribe to data from Isaac Sim. The following examples are available.</p>
+<p>Manual Camera Publishing, Periodic Camera Publishing, Clock, MoveIt, RTX LIDAR, Standard Subscriber, Carter’s Stereo and Carter’s Multi Robot Navigation.</p>
+<p>Carter is like turtlebot</p>
+</section>
+<section id="sensor">
+<h2>Sensor<a class="headerlink" href="#sensor" title="Link to this heading"></a></h2>
+<p>Contains standalone scripts for the following sensors:</p>
+<dl class="myst field-list simple">
+<dt class="field-odd"><strong>Camera</strong><span class="colon">:</span></dt>
+<dd class="field-odd"><p>camera, camera with openCV, fisheye camera with openCV, Camera with ROS, Camera with viewing</p>
+</dd>
+<dt class="field-even"><strong>Physics</strong><span class="colon">:</span></dt>
+<dd class="field-even"><p>Contact, Effort and IMU</p>
+</dd>
+<dt class="field-odd"><strong>PhysX</strong><span class="colon">:</span></dt>
+<dd class="field-odd"><p>Rotating LIDAR</p>
+</dd>
+<dt class="field-even"><strong>RTX</strong><span class="colon">:</span></dt>
+<dd class="field-even"><p>Rotating LIDAR</p>
+</dd>
+</dl>
+</section>
+<section id="simulation-app">
+<h2>Simulation App<a class="headerlink" href="#simulation-app" title="Link to this heading"></a></h2>
+<p>Run scipts to get empty world. There are scripts for default world, livestreaming (used in docker installation), contant fps, changing resolution and loading sample stage.</p>
+</section>
+<section id="util">
+<h2>Util<a class="headerlink" href="#util" title="Link to this heading"></a></h2>
+<p>Contains a script to detech clash in Carter and to draw points seen by Lidar/Radar as debug draw.</p>
+</section>
+<section id="xr">
+<h2>XR<a class="headerlink" href="#xr" title="Link to this heading"></a></h2>
+<p>Script for hand tracking in XR.</p>
+</section>
+<section id="omni">
+<h2>Omni<a class="headerlink" href="#omni" title="Link to this heading"></a></h2>
+<p>Contains files that use Omni API for asset conversion and to run simulation in async. This way simulation can be started and then script can be run to execute commands. This is used in a manipulation examples. There is also a file called <code class="docutils literal notranslate"><span class="pre">app_framework.py</span></code> which I am not sure what it does.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../standalone_examples.html" class="btn btn-neutral float-left" title="standalone_examples shippped with Isaac-Sim" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="replicator.html" class="btn btn-neutral float-right" title="Replicator in standalone_examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Kushal Agarwal.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
