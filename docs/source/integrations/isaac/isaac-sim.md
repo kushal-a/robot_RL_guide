@@ -7,6 +7,8 @@ The following things are covered for Isaac Sim here:
 
 isaac-sim/isaac-sim-standalone
 isaac-sim/isaac-sim-with-ros
+isaac-sim/isaac-sim-with-replicator
+isaac-sim/isaac-sim-with-digital-twin
 
 ```
 ## Important links

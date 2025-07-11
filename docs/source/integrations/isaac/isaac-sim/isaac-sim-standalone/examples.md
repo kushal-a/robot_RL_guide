@@ -35,118 +35,127 @@ The following are the compatibility of these examples with different Isaac Sim w
     - ✅
     - ✅
 *   - Contact 
-    - 
-    - 
-    - 
+    - ✅
+    - ✅
+    - ✅
 *   - **Input Devices** 
     - 
     - 
     - 
 *   - Kaya Gamepad 
-    - 
-    - 
-    - 
+    - ✅
+    - ❌
+    - ❌
 *   - Omnigraph Keyboard 
-    - 
-    - 
-    - 
+    - ✅
+    - ❌
+    - ❌
 *   - **Mannipulation** 
     - 
     - 
     - 
 *   - Follow Target 
-    - 
-    - 
-    - 
+    - ✅
+    - ❌
+    - ❌
 *   - Path Planning 
-    - 
-    - 
-    - 
+    - ✅
+    - ❌
+    - ✅ ([here](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/manipulators/manipulators_lula_rrt.html#isaac-sim-app-tutorial-motion-generation-rrt))
 *   - Simple Stack 
-    - 
-    - 
-    - 
+    - ✅
+    - ❌
+    - ❌
 *   - Bin Filling 
-    - 
-    - 
-    - 
+    - ✅
+    - ❌
+    - ❌
 *   - Replay Follow Target 
-    - 
-    - 
-    - 
+    - ✅
+    - ❌
+    - ❌
 *   - Surface Gripper 
-    - 
-    - 
-    - 
-*   - **Multi-Robot **
+    - ✅
+    - ❌
+    - ✅ ([here](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/robot_simulation/ext_isaacsim_robot_surface_gripper.html#isaac-surface-grippers))
+*   - **Multi-Robot**
     - 
     - 
     - 
 *   - Robo Party 
-    - 
-    - 
-    - 
+    - ✅
+    - ❌
+    - ❌
 *   - Robo Factory 
-    - 
-    - 
-    - 
-*   - **General **
+    - ✅
+    - ❌
+    - ❌
+*   - **General**
     - 
     - 
     - 
 *   - Hello World 
-    - 
-    - 
-    - 
-*   - **Policy** 
+    - ✅
+    - ❌
+    - ❌
+*   - **Policy** - covered [later](../../../isaac-lab.md)
     - 
     - 
     - 
 *   - Quadruped 
-    - 
-    - 
-    - 
+    - ✅
+    - ❌
+    - ❌
 *   - Humanod 
-    - 
-    - 
-    - 
-*   - **Cortex** 
+    - ✅
+    - ❌
+    - ❌
+*   - **Cortex** - covered [later](../../isaac-sim-with-digital-twin.md)
     - 
     - 
     - 
 *   - UR 10 palletizing 
-    - 
-    - 
-    - 
+    - ✅
+    - ✅
+    - ✅
 *   - Franka Cortex Examples 
-    - 
-    - 
-    - 
+    - ✅
+    - ✅
+    - ✅
 *   - **Import Robots** 
     - 
     - 
     - 
 *   - Carter URDF 
-    - 
-    - 
-    - 
+    - ✅
+    - ❌
+    - ❌
 *   - Franka URDF 
-    - 
-    - 
-    - 
+    - ✅
+    - ❌
+    - ❌
 *   - Kaya URDF 
-    - 
-    - 
-    - 
+    - ✅
+    - ❌
+    - ❌
 *   - UR10 URDF 
-    - 
-    - 
-    - 
+    - ✅
+    - ❌
+    - ❌
 *   - **Tutorials** - already covered [here](./standalone_examples.md/#tutorials)
     - 
     - 
     - 
-
-
-
 :::
+
+TODO
+
+Standalone python script for:
+
+:URDF importing: [refer](../isaac-sim-standalone/standalone-python-workflow/standalone_examples.md/#asset)
+
+:Multi robot systems: 
+
+:Manipulation tasks: 
+
+:Input device interfacing:
