@@ -142,7 +142,7 @@ The following are the compatibility of these examples with different Isaac Sim w
     - ✅
     - ❌
     - ❌
-*   - **Tutorials** - already covered [here](./standalone-python-workflow/standalone_examples.md/#tutorials)
+*   - **Tutorials** - already covered [here](./standalone-python-workflow/standalone_examples.md#tutorials)
     - 
     - 
     - 
@@ -152,7 +152,7 @@ TODO
 
 Standalone python script for:
 
-:URDF importing: [refer](./standalone-python-workflow/standalone_examples/api.md/#asset)
+:URDF importing: [refer](./standalone-python-workflow/standalone_examples/api.md#asset)
 
 :Multi robot systems: 
 
