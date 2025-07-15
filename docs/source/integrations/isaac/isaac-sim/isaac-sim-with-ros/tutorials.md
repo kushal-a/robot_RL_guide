@@ -7,8 +7,8 @@
 The following are the compatibility of these examples with different Isaac Sim workflow.
 
 :::{table}
-:widths: 30% 20% 25% 25%
-:header_rows: 1
+:widths: 30 20 25 25
+:header-rows: 1
 
 | Example | GUI | Scripting | Standalone Python |
 |---------|------|----------|------------------|
@@ -26,12 +26,12 @@ The following are the compatibility of these examples with different Isaac Sim w
 | NameOverride Attribute | ✅ | ❌ | ❌ |
 | ROS 2 Ackermann Controller |✅ | ❌ | ❌ |
 | Automatic ROS 2 Namespace Generation |✅ | ✅ | ✅ |
-| ROS 2 Bridge in Standalone Workflow |❌ | ✅ | ✅ [here](../isaac-sim-standalone/standalone-python-workflow/standalone_examples/api.md/#ros-bridge) |
-| ROS2 Navigation |❌ | ✅ | ✅ [here](../isaac-sim-standalone/standalone-python-workflow/standalone_examples/api.md/#ros-bridge) |
+| ROS 2 Bridge in Standalone Workflow |❌ | ✅ | ✅ [here](../isaac-sim-standalone/standalone-python-workflow/standalone_examples/api.md#ros-bridge) |
+| ROS2 Navigation |❌ | ✅ | ✅ [here](../isaac-sim-standalone/standalone-python-workflow/standalone_examples/api.md#ros-bridge) |
 | Multiple Robot ROS2 Navigation |❌ | ✅ | ✅ |
 | ROS 2 Navigation with Block World Generator |✅ | ❌ | ❌ |
 | MoveIt 2 |✅ | ❌ | ❌ |
-| ROS 2 Generic Publisher and Subscriber |✅ | ❌ | ❌ but available [here](../isaac-sim-standalone/standalone-python-workflow/standalone_examples/api.md/#ros-bridge) |
+| ROS 2 Generic Publisher and Subscriber |✅ | ❌ | ❌ but available [here](../isaac-sim-standalone/standalone-python-workflow/standalone_examples/api.md#ros-bridge) |
 | ROS 2 Generic Server and Client | ✅ | ❌ | ❌
 | ROS 2 Service for Manipulating Prims Attributes |✅ | ❌ | ❌
 | ROS 2 Python Custom Messages |❌ | ✅ | ✅ |
