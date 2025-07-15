@@ -10,8 +10,8 @@ Docker images have been made for software that was developed in close proximity 
 ```
 
 Clearly there are 2 workflows:
-1. [Isaac tools (and ROS)](#isaac-tools-and-ros)
-2. [Pybullet with TF & Gym](#pybullet-with-tf--gym)
+1. [Isaac tools (and ROS)](./isaac.md)
+2. [Pybullet with TF & Gym](./python.md)
 
 We will discuss each of there in detail.
 

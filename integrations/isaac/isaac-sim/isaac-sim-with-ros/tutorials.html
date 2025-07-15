@@ -88,6 +88,147 @@
 <section id="tutorial-workflow-compatibility">
 <h2>Tutorial Workflow Compatibility<a class="headerlink" href="#tutorial-workflow-compatibility" title="Link to this heading"></a></h2>
 <p>The following are the compatibility of these examples with different Isaac Sim workflow.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Example</p></th>
+<th class="head"><p>GUI</p></th>
+<th class="head"><p>Scripting</p></th>
+<th class="head"><p>Standalone Python</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>URDF Import: Turtlebot</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Driving TurtleBot via ROS2 messages</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>ROS2 Clock</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>ROS 2 Publish Real Time Factor (RTF)</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>ROS2 Cameras</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Publishing Camera’s Data - same as ROS2 Cameras</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-even"><td><p>RTX Lidar Sensors</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td><p>ROS2 Transform Trees and Odometry</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>ROS2 Setting Publish Rates</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>ROS 2 Quality of Service (QoS)</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>ROS2 Joint Control: Extension Python Scripting</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td><p>NameOverride Attribute</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>ROS 2 Ackermann Controller</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Automatic ROS 2 Namespace Generation</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-even"><td><p>ROS 2 Bridge in Standalone Workflow</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>✅ <a class="reference internal" href="../isaac-sim-standalone/standalone-python-workflow/standalone_examples/api.html#ros-bridge"><span class="std std-ref">here</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>ROS2 Navigation</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>✅ <a class="reference internal" href="../isaac-sim-standalone/standalone-python-workflow/standalone_examples/api.html#ros-bridge"><span class="std std-ref">here</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Multiple Robot ROS2 Navigation</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td><p>ROS 2 Navigation with Block World Generator</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>MoveIt 2</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>ROS 2 Generic Publisher and Subscriber</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌ but available <a class="reference internal" href="../isaac-sim-standalone/standalone-python-workflow/standalone_examples/api.html#ros-bridge"><span class="std std-ref">here</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>ROS 2 Generic Server and Client</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>ROS 2 Service for Manipulating Prims Attributes</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>ROS 2 Python Custom Messages</p></td>
+<td><p>❌</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+<tr class="row-odd"><td><p>ROS 2 Python Custom OmniGraph Node</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>ROS 2 Custom C++ OmniGraph Node</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>ROS 2 Launch</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>command line</p></td>
+</tr>
+</tbody>
+</table>
 <p>A lot of the tasks are performed as a mixture of GUI Omnigraph creation and python scripting.</p>
 </section>
 </section>

@@ -62,5 +62,5 @@ The first three files are used to start Isaac Sim from terminal. Choose the one 
 
 The core functionality of Isaac Sim is written as various Isaac Sim extensions. These extensions, found in `exts` folder. Detailed documentation can be found [here](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/py/index.html) for the 4.5.0 version. We will be using these extensions, which are actually python libraries, in our scripts, automating and specifying our interactions with Isaac Sim.
 
-There is also a folder called `standalone_examples`. Details of this will be discussed [later](./standalone_python/standalone_python.md).
+There is also a folder called `standalone_examples`. Details of this will be discussed [later](./standalone-python-workflow/standalone_examples.md).
 
