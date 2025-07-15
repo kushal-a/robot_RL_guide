@@ -42,7 +42,7 @@ Isaac ROS are a set of ROS packages. These are designed with NVIDIA-acceleration
 | -- | -- |
 | [OpenUSD](https://docs.omniverse.nvidia.com/usd/latest) | NVIDIA's version of SDF, developed by PIXAR. Used for extremely [detailed scenes](https://docs.omniverse.nvidia.com/usd/latest/usd_content_samples/sample_content.html#) and robots |
 | [OmniGraph](https://docs.omniverse.nvidia.com/extensions/latest/ext_omnigraph.html) | Visual Scripting Tool In Omniverse. Basically, it is like making a network of ROS nodes using drag and drop pulling the mouse to connect nodes with each other | 
-
+:::
 
 ```{toctree}
 :maxdepth: 1
