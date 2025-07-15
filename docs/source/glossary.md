@@ -1,6 +1,6 @@
 # Glossary
 
-:::{list-table}
+:::{table}
 :widths: grid
 
 

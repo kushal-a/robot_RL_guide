@@ -6,10 +6,10 @@
 
 The following are the compatibility of these examples with different Isaac Sim workflow.
 
-:::{list-table}
+:::{table}
 :widths: 30% 20% 25% 25%
 :header_rows: 1
-✅ | ❌ | ❌ |
+
 | Example | GUI | Scripting | Standalone Python |
 |---------|------|----------|------------------|
 | URDF Import: Turtlebot | ✅ | ❌ | ❌ |

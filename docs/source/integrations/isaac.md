@@ -3,7 +3,7 @@
 This section will not cover core ROS but its only integrations with Isaac tools. The following will be discussed here.
 1. [Isaac Sim](#isaac-sim), for simulation
 2. [Isaac ROS](#isaac-ros), for tooling
-3. [Isaac Lab](#isaac-lab), for learning
+3. [Isaac Lab](./isaac/isaac-lab.md), for learning
 
 There are 3 compatibilites to check: 
 | Interaction | Compatibility |
@@ -35,7 +35,7 @@ Isaac ROS are a set of ROS packages. These are designed with NVIDIA-acceleration
 
 ## A few more terms
 
-:::{list-table}
+:::{table}
 :widths: grid
 
 | Name | Description |

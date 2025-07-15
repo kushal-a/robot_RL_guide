@@ -8,7 +8,7 @@
 
 [List](https://docs.isaacsim.omniverse.nvidia.com/4.5.0/introduction/examples.html)
 
-The following are the compatibility of these examples with different Isaac Sim workflow. ROS examples from the list will be covered [later](../../isaac-sim-with-ros/tutorials.md).
+The following are the compatibility of these examples with different Isaac Sim workflow. ROS examples from the list will be covered [later](../isaac-sim-with-ros/tutorials.md).
 
 :::{list-table}
 :widths: 30% 20% 25% 25%
@@ -98,7 +98,7 @@ The following are the compatibility of these examples with different Isaac Sim w
     - ✅
     - ❌
     - ❌
-*   - **Policy** - covered [later](../../../isaac-lab.md)
+*   - **Policy** - covered [later](../../isaac-lab.md)
     - 
     - 
     - 
@@ -110,7 +110,7 @@ The following are the compatibility of these examples with different Isaac Sim w
     - ✅
     - ❌
     - ❌
-*   - **Cortex** - covered [later](../../isaac-sim-with-digital-twin.md)
+*   - **Cortex** - covered [later](../isaac-sim-with-digital-twin.md)
     - 
     - 
     - 
@@ -142,7 +142,7 @@ The following are the compatibility of these examples with different Isaac Sim w
     - ✅
     - ❌
     - ❌
-*   - **Tutorials** - already covered [here](./standalone_examples.md/#tutorials)
+*   - **Tutorials** - already covered [here](./standalone-python-workflow/standalone_examples.md/#tutorials)
     - 
     - 
     - 
@@ -152,7 +152,7 @@ TODO
 
 Standalone python script for:
 
-:URDF importing: [refer](../isaac-sim-standalone/standalone-python-workflow/standalone_examples.md/#asset)
+:URDF importing: [refer](./standalone-python-workflow/standalone_examples/api.md/#asset)
 
 :Multi robot systems: 
 
