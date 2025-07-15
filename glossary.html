@@ -52,35 +52,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="news.html">News and Updates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="integrations/index.html">Integrations</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="integrations/isaac.html">Isaac tools (and ROS)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="integrations/isaac/isaac-sim.html">Isaac Sim</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="integrations/isaac/isaac-sim/isaac-sim-standalone.html">Isaac Sim</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="integrations/isaac/isaac-sim/isaac-sim-standalone/docker-installation.html">Installation and Management of Isaac Sim Container in Docker</a></li>
-<li class="toctree-l5"><a class="reference internal" href="integrations/isaac/isaac-sim/isaac-sim-standalone/docker-installation.html#running-isaac-sim-in-docker">Running Isaac Sim in Docker</a></li>
-<li class="toctree-l5"><a class="reference internal" href="integrations/isaac/isaac-sim/isaac-sim-standalone/understanding-filesystem.html">Understanding Filesystem</a></li>
-<li class="toctree-l5"><a class="reference internal" href="integrations/isaac/isaac-sim/isaac-sim-standalone/basics.html">Core Concepts</a></li>
-<li class="toctree-l5"><a class="reference internal" href="integrations/isaac/isaac-sim/isaac-sim-standalone/standalone-python-workflow.html">Standalone Python</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="integrations/isaac/isaac-sim/isaac-sim-standalone/standalone-python-workflow/using-standalone-examples-in-docker.html">Standalone examples for Docker</a></li>
-<li class="toctree-l6"><a class="reference internal" href="integrations/isaac/isaac-sim/isaac-sim-standalone/standalone-python-workflow/standalone_examples.html"><code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code> shippped with Isaac-Sim</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="integrations/isaac/isaac-sim/isaac-sim-standalone/standalone-python-workflow/standalone_examples/api.html">API in <code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="integrations/isaac/isaac-sim/isaac-sim-standalone/standalone-python-workflow/standalone_examples/replicator.html">Replicator in <code class="docutils literal notranslate"><span class="pre">standalone_examples</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="integrations/isaac/isaac-sim/isaac-sim-standalone/examples.html">Examples from documentation</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="integrations/isaac/isaac-sim/isaac-sim-with-ros.html">Isaac Sim integration with ROS</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="integrations/isaac/isaac-sim/isaac-sim-with-ros/tutorials.html">Examples from documentation</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="integrations/isaac/isaac-ros.html">Isaac ROS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrations/isaac/isaac-lab.html">Isaac Lab</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="integrations/isaac.html">Isaac tools (and ROS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="integrations/python.html">PyBullet with TF &amp; Gym</a><ul class="simple">
 </ul>
 </li>
@@ -114,45 +86,6 @@
              
   <section class="tex2jax_ignore mathjax_ignore" id="glossary">
 <h1>Glossary<a class="headerlink" href="#glossary" title="Link to this heading"></a></h1>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong><a class="reference external" href="https://www.nvidia.com/en-in/omniverse/">Omniverse</a></strong></p></td>
-<td><p>NVIDIA’s Industrial AI platform. Sort of like playstore for its applications. There is also an Omniverse SDK for you to make your own Omniverse applications. Some of these include digital twin, robot learning, synthetic data generation etc. This space is largely occupied by robotics and related fields.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong><a class="reference external" href="https://developer.nvidia.com/isaac/">Isaac</a></strong></p></td>
-<td><p>Earlier being the name of a robotics application, this is being developed as a full fledged platform for robotics.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong><a class="reference external" href="https://developer.nvidia.com/isaac/sim">Isaac Sim</a></strong></p></td>
-<td><p>A simulator like Gazebo. The speciality of Isaac Sim is that it provides highly photorealistic simulations, good for camera oriented development.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong><a class="reference external" href="https://developer.nvidia.com/isaac/ros">Isaac Ros</a></strong></p></td>
-<td><p>A package to connect Isaac sim to Ros</p></td>
-</tr>
-<tr class="row-even"><td><p><strong><a class="reference external" href="https://developer.nvidia.com/isaac/lab">Isaac Lab</a></strong></p></td>
-<td><p>A package to use Isaac sim for robot learning. Here you can leverage other omniverse tools in integration.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong><a class="reference external" href="https://www.gymlibrary.dev/">OpenAI Gym</a></strong></p></td>
-<td><p>OpenAI python library for RL. Due to its focus on RL development, the framework allowed excellent environment descriptions, as required by RL, and this feature is heavily used across platform, including AnyMal. However, It does not have a physics engine. This  package has been deprecated. Earlier Gym environments were used to run simulations in Isaac Sim.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong><a class="reference external" href="https://gymnasium.farama.org/index.html">Gymnasium</a></strong></p></td>
-<td><p>Newly maintained version of OpenAI Gym by a non-profit</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong><a class="reference external" href="https://pybullet.org">Pybullet</a></strong></p></td>
-<td><p>Python library for physics simulation. Now you can combine Gym and Pybullet to make excellent environments with good physics simulations and use Gym or any other application to run your RL policy.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong><a class="reference external" href="https://tensorflow.org">Tensorflow</a></strong></p></td>
-<td><p>Open source python library maintained by Google which leads in RL applications. However, it hosts a platter of ML tools.</p></td>
-</tr>
-<tr class="row-odd"><td><p>CUDA</p></td>
-<td><p>NVIDIA’s software library/package to allow usage of GPU for tasks other than gaming. It optimizes how running scripts are implements to accelrate performance.</p></td>
-</tr>
-</tbody>
-</table>
 </section>
 
 
