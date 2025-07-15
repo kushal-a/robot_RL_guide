@@ -35,6 +35,9 @@ Isaac ROS are a set of ROS packages. These are designed with NVIDIA-acceleration
 
 ## A few more terms
 
+:::{list-table}
+:widths: grid
+
 | Name | Description |
 | -- | -- |
 | [OpenUSD](https://docs.omniverse.nvidia.com/usd/latest) | NVIDIA's version of SDF, developed by PIXAR. Used for extremely [detailed scenes](https://docs.omniverse.nvidia.com/usd/latest/usd_content_samples/sample_content.html#) and robots |

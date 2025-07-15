@@ -1,5 +1,9 @@
 # Glossary
 
+:::{list-table}
+:widths: grid
+
+
 | Name | Description |
 |--|--|
 |**[Omniverse](https://www.nvidia.com/en-in/omniverse/)**| NVIDIA’s Industrial AI platform. Sort of like playstore for its applications. There is also an Omniverse SDK for you to make your own Omniverse applications. Some of these include digital twin, robot learning, synthetic data generation etc. This space is largely occupied by robotics and related fields.|
@@ -13,3 +17,4 @@
 |**[Tensorflow](https://tensorflow.org)**| Open source python library maintained by Google which leads in RL applications. However, it hosts a platter of ML tools.|
 |CUDA| NVIDIA's software library/package to allow usage of GPU for tasks other than gaming. It optimizes how running scripts are implements to accelrate performance. |
 
+:::
