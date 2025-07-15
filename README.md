@@ -2,4 +2,4 @@
 
 The package explore various tools available for Reinforcement learning for robotics applications
 
-[Get Started](./docs/source/index.rst)
+[Get Started](https://kushal-a.github.io/robot_RL_guide)
